@@ -29,32 +29,4 @@ public class DAO {
 			e.printStackTrace();
 		}
 	}
-
-//	public static ArrayList<Order> getAllOrders(Connection connection) {
-//
-//		Statement statement;
-//		ArrayList<Order> orderList = new ArrayList<Order>();
-//		try {
-//			statement = connection.createStatement();
-//			ResultSet resultSet = statement.executeQuery("select * from food_order");
-//
-//			while (resultSet.next()) {
-//				int id = resultSet.getInt(1);
-//				int foodId = resultSet.getInt(2);
-//				String foodName = resultSet.getString(3);
-//				int price = resultSet.getInt(4);
-//				int quantity = resultSet.getInt(5);
-//				int customerId = resultSet.getInt(6);
-//
-//				Order order = new Order(id, foodId, foodName, price, quantity, customerId);
-//				orderList.add(order);
-//			}
-//
-//		} catch (SQLException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//		return orderList;
-//
-//	}
 }
